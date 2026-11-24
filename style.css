@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+main {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 { margin-bottom: 24px; }
+h2 { font-size: 1.1rem; margin-top: 32px; }
+
+form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+input:focus-visible { outline: 2px solid #2563eb; outline-offset: 1px; }
+input[readonly] { background: #f8fafc; }
+
+.linha { display: flex; gap: 12px; }
+.linha > div { flex: 1; }
+.linha > .uf { flex: 0 0 80px; }
+
+#mensagem {
+  margin: 16px 0 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+#mensagem.erro { background: #fee2e2; color: #991b1b; }
+#mensagem.info { background: #dbeafe; color: #1e40af; }
+
+#historico { list-style: none; padding: 0; margin: 0; }
+#historico li {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+#historico li strong { display: block; }
+#historico-vazio { color: #64748b; }
